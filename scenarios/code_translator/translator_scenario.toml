@@ -1,0 +1,17 @@
+[green_agent]
+endpoint = "http://127.0.0.1:9009"
+cmd = "python scenarios/code_translator/adk_translator_judge.py --host 127.0.0.1 --port 9009"
+
+[[participants]]
+role = "researcher_translator"
+endpoint = "http://127.0.0.1:9019"
+cmd = "python scenarios/code_translator/translator.py --host 127.0.0.1 --port 9019"
+
+[[participants]]
+role = "developer_translator"
+endpoint = "http://127.0.0.1:9018"
+cmd = "python scenarios/code_translator/translator.py --host 127.0.0.1 --port 9018"
+
+[config]
+topic = "programming language translation"
+num_rounds = 3
