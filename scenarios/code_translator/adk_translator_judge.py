@@ -33,7 +33,6 @@ in general the translation needs to be clear, clean and error free.
 
     '''
 
-
 def main():
     parser = argparse.ArgumentParser(description="Run the A2A programming languages translation judge.")
     parser.add_argument("--host", type=str, default="127.0.0.1", help="Host to bind the server")

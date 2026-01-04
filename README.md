@@ -54,20 +54,20 @@ The project includes a production-ready Docker setup leveraging multi-stage buil
 
 **Build the Image:**
 ```bash
-docker build -f docker/Dockerfile -t agentbeats-code-translator .
+docker build -f docker/Dockerfile -t samiratra95/code_translator_agentx .
 ```
 
 **Run the Scenario:**
 Pass your environment variables directly to the container:
 ```bash
-docker run --rm -it --env-file .env agentbeats-code-translator \
+docker run --rm -it --env-file .env samiratra95/code_translator_agentx \
     agentbeats-run scenarios/code_translator/translator_scenario.toml
 ```
 
 **Alternative: Mount .env file**
 If you prefer mounting the file (useful for rapid config changes):
 ```bash
-docker run --rm -it -v $(pwd)/.env:/app/.env agentbeats-code-translator
+docker run --rm -it -v $(pwd)/.env:/app/.env samiratra95/code_translator_agentx
 ```
 
 ### 2. Local Execution

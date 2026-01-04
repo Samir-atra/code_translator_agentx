@@ -21,7 +21,6 @@ class TranslatorEval(BaseModel):
     winner: Literal["researcher_translator", "developer_translator"]
     reason: str
 
-
 def translator_judge_agent_card(agent_name: str, card_url: str) -> AgentCard:
     skill = AgentSkill(
         id='moderate_and_judge_translations',

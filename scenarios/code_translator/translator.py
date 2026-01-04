@@ -39,6 +39,5 @@ def main():
     a2a_app = to_a2a(root_agent, agent_card=agent_card)
     uvicorn.run(a2a_app, host=args.host, port=args.port)
 
-
 if __name__ == "__main__":
     main()
