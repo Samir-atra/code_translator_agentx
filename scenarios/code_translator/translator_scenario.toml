@@ -5,12 +5,12 @@ cmd = "python scenarios/code_translator/adk_translator_judge.py --host 127.0.0.1
 [[participants]]
 role = "researcher_translator"
 endpoint = "http://127.0.0.1:9019"
-cmd = "python scenarios/code_translator/translator.py --host 127.0.0.1 --port 9019"
+cmd = "python scenarios/code_translator/translator.py --host 127.0.0.1 --port 9019 --agent-name researcher_translator"
 
 [[participants]]
 role = "developer_translator"
 endpoint = "http://127.0.0.1:9018"
-cmd = "python scenarios/code_translator/translator.py --host 127.0.0.1 --port 9018"
+cmd = "python scenarios/code_translator/translator.py --host 127.0.0.1 --port 9018 --agent-name developer_translator"
 
 [config]
 topic = "programming language translation"

@@ -18,7 +18,7 @@ considerations:
 
     - it does not produce error when it runs.
     - it is styled and commented in the new language method.
-    - it is consise and does not have extra non relevant code.
+    - it is concise and does not have extra non relevant code.
     - it is clear and relevant to the topic.
 
 the format of the output translation is as follows, containing at least two points of them with requirement for the first one:
@@ -27,7 +27,7 @@ the format of the output translation is as follows, containing at least two poin
     2 - it keeps the same functionality of the original code.
     3 - it have the same structure and logic of the original code.
 
-the translation needs to start eith a note about the current language and the new language.
+the translation needs to start with a note about the current language and the new language.
 
 in general the translation needs to be clear, clean and error free.
 

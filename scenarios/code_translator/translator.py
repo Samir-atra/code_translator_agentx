@@ -16,17 +16,18 @@ def main():
     parser.add_argument("--host", type=str, default="127.0.0.1", help="Host to bind the server")
     parser.add_argument("--port", type=int, default=9019, help="Port to bind the server")
     parser.add_argument("--card-url", type=str, help="External URL to provide in the agent card")
+    parser.add_argument("--agent-name", type=str, default="translator", help="Name of the agent")
     args = parser.parse_args()
 
     root_agent = Agent(
-        name="translator",
+        name=args.agent_name,
         model="gemini-2.5-flash",
         description="Participates in a programming languages translation challenge.",
-        instruction="you are a professional programming languages translator.",
+        instruction=f"you are a professional programming languages translator. You are acting as {args.agent_name}.",
     )
 
     agent_card = AgentCard(
-        name="translator",
+        name=args.agent_name,
         description='Participates in a programming languages translation.',
         url=args.card_url or f'http://{args.host}:{args.port}/',
         version='1.0.0',

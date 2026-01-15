@@ -7,7 +7,7 @@ Code Translator AgentX is a multi-agent evaluation framework built on the [Agent
 The system follows a Green/Purple agent architecture:
 
 ### 1. Evaluator Agent (Green Agent)
-**Implementation**: `src/scenarios/code_translator/adk_translator_judge.py`
+**Implementation**: `scenarios/code_translator/adk_translator_judge.py`
 **Model**: `gemini-2.5-flash`
 
 The Evaluator acts as the orchestration host and final judge. It performs the following technical functions:
@@ -21,7 +21,7 @@ The Evaluator acts as the orchestration host and final judge. It performs the fo
 *   **Output**: Structured `TranslatorEval` JSON artifacts detailing scores and declaring a winner.
 
 ### 2. Participant Agents (Purple Agents)
-**Implementation**: `src/scenarios/code_translator/translator.py`
+**Implementation**: `scenarios/code_translator/translator.py`
 **Model**: `gemini-2.5-flash`
 
 The system currently supports two distinct participant roles defined in `translator_scenario.toml`:
